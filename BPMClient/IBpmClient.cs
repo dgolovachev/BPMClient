@@ -14,13 +14,13 @@ namespace BPMClient
         bool Login();
 
         /// <summary>
-        /// Starts the sevice get.
+        /// Call the sevice get.
         /// </summary>
         /// <param name="service"></param>
         /// <param name="method"></param>
         /// <param name="parameters"></param>
         /// <returns></returns>
-        string StartSeviceGet(string service, string method, Dictionary<string, object> parameters);
+        string CallSeviceGet(string service, string method, Dictionary<string, object> parameters);
 
         /// <summary>
         /// Starts the process.

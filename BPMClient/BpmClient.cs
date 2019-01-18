@@ -63,7 +63,7 @@ namespace BPMClient
         }
 
         /// <summary>
-        /// Starts the sevice get.
+        /// Call the sevice get.
         /// </summary>
         /// <param name="service">The service.</param>
         /// <param name="method">The method.</param>
@@ -74,7 +74,7 @@ namespace BPMClient
         /// or
         /// method is undefined
         /// </exception>
-        public string StartSeviceGet(string service, string method, Dictionary<string, object> parameters = null)
+        public string CallSeviceGet(string service, string method, Dictionary<string, object> parameters = null)
         {
             if (string.IsNullOrWhiteSpace(service)) throw new Exception("service is undefined");
             if (string.IsNullOrWhiteSpace(method)) throw new Exception("method is undefined");
